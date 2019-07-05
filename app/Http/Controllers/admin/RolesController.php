@@ -10,13 +10,19 @@ class RolesController extends Controller
     public static function conall()
     {
         return [
-            'userscontroller'=>'用户管理',
+            'usercontroller'=>'用户管理',
+            // 'userscontroller'=>'用户管理',
             'catescontroller'=>'分类管理',
             'goodcontroller'=>'商品管理',
             'adminusercontroller'=>'管理员管理',
             'nodescontroller'=>'权限管理',
             'ordercontroller'=>'订单管理',
             'rolescontroller'=>'角色管理',
+            'linkscontroller'=>'友链管理',
+            'bannercontroller'=>'轮播图管理',
+            'verscontroller'=>'广告管理',
+            'discusscontroller'=>'评论管理',
+            'activcontroller'=>'活动管理',
         ];
     }
 

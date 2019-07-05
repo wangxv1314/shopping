@@ -5,11 +5,13 @@
 						<div class="am-slider am-slider-default scoll" data-am-flexslider id="demo-slider-0">
 							<ul class="am-slides">
 								@foreach($banner_data as $v)
+								@if($v->status == 0)
 								<li class="banner1">
 									<a href="javascript:;">
 										<img src="upload/banners/{{ $v->pic }}" />
 									</a>
 								</li>
+								@endif
 								@endforeach
 
 							</ul>
@@ -259,7 +261,7 @@
 							<div class="icon-sale one "></div>	
 								<h4>{{ $v->aname}}</h4>							
 							<div class="activityMain ">
-								<img src="/upload/activitys/{{ $v->pic }} "></img>
+								<img src="/upload/activ/{{ $v->pic }} "></img>
 							</div>
 							<div class="info ">
 								<h3>{{ $v->desc }}</h3>

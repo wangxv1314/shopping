@@ -12,12 +12,87 @@
 
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#user">
-            <i class="fa fa-fw fa-file"></i>
+            <i class="fa fa-fw fa-user"></i>
             <span class="nav-link-text">用户管理</span>
           </a>
           <ul class="sidenav-second-level collapse" id="user">
             <li>
               <a href="/user/index">用户列表</a>
+            </li>
+            <li>
+              <a href="/user/create">用户添加</a>
+            </li>
+          </ul>
+        </li>
+
+         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#links">
+            <i class="fa fa-fw fa-link"></i>
+            <span class="nav-link-text">友情链接</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="links">
+            <li>
+              <a href="/links/index">链接列表</a>
+            </li>
+            <li>
+              <a href="/links/create">添加链接</a>
+            </li>
+          </ul>
+        </li>
+        
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#banner">
+            <i class="fa fa-fw fa-picture-o"></i>
+            <span class="nav-link-text">轮播图管理</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="banner">
+            <li>
+              <a href="/banner/index">轮播列表</a>
+            </li>
+            <li>
+              <a href="/banner/create">添加轮播图</a>
+            </li>
+          </ul>
+        </li>
+        
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#vers">
+            <i class="fa fa-fw fa-film"></i>
+            <span class="nav-link-text">广告管理</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="vers">
+            <li>
+              <a href="/vers/index">广告列表</a>
+            </li>
+            <li>
+              <a href="/vers/create">添加广告</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#discuss">
+            <i class="fa fa-fw fa-commenting-o"></i>
+            <span class="nav-link-text">评论管理</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="discuss">
+            <li>
+              <a href="/discuss/index">评论列表</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#activ">
+            <i class="fa fa-fw fa-bullhorn"></i>
+            <span class="nav-link-text">活动管理</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="activ">
+            <li>
+              <a href="/activ/index">活动列表</a>
+            </li>
+            <li>
+              <a href="/activ/create">添加活动</a>
             </li>
           </ul>
         </li>

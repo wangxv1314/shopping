@@ -45,9 +45,9 @@ Route::group(['middleware'=>['login','nodes']],function(){
 // 后台首页
 Route::get('admin','admin\IndexController@index');
 // 后台 管理员
-Route::resource('admin/adminuser','admin\AdminuserController');
+Route::resource('admin/adminuser','admin\adminuserController');
 // 管理员删除
-Route::resource('admin/adminuser/destroy','admin\AdminuserController@destroy');
+Route::resource('admin/adminuser/destroy','admin\adminuserController@destroy');
 // 后台  角色
 Route::resource('admin/roles','admin\RolesController');
 // 后台 权限
@@ -80,20 +80,52 @@ Route::post('admin/goods/update','admin\GoodController@update');
 Route::get('admin/goods/show/{gid}','admin\GoodController@show');
 // 执行添加商品图片
 Route::post('admin/goods/add','admin\GoodController@add');
+// 用户列表
+Route::get('user/index','admin\UserController@index');
+//用户添加
+Route::get('user/create','admin\UserController@create');
+//后台用户路由
+Route::resource('admin/user','admin\UserController');
+//后台广告路由
+Route::resource('admin/vers','admin\VersController');
+//广告列表
+Route::get('vers/index','admin\VersController@index');
+//广告添加
+Route::get('vers/create','admin\VersController@create');
+//友情链接路由
+Route::resource('admin/links','admin\LinksController');
+//链接列表
+Route::get('links/index','admin\LinksController@index');
+//添加连接
+Route::get('links/create','admin\LinksController@create');
+//修改链接状态
+Route::get('links/changeStatus/{lid}','admin\LinksController@changeStatus');
+//轮播图路由
+Route::resource('admin/banner','admin\BannerController');
+//轮播列表
+Route::get('banner/index','admin\BannerController@index');
+//添加轮播图
+Route::get('banner/create','admin\BannerController@create');
+//修改轮播状态
+Route::get('banner/changeStatus/{bid}','admin\BannerController@changeStatus');
+//评论列表
+Route::get('discuss/index','admin\DiscussController@index');
+//评论添加
+Route::get('discuss/create','admin\DiscussController@create');
+//后台评论
+Route::resource('admin/discuss','admin\DiscussController');
+//活动列表
+Route::get('activ/index','admin\ActivController@index');
+//添加活动
+Route::get('activ/create','admin\ActivController@create');
+//执行添加活动
+Route::post('admin/activ','admin\ActivController@store');
+// 删除活动
+Route::post('admin/activ/destroy','admin\ActivController@destroy');
 });
-
-
 // 前台登录
 Route::get('login','home\LoginController@index');
-
-
-
-
-
-
 // 前台执行登录
-
-
 Route::post('dologin','home\LoginController@dologin');
 // 前台退出
 Route::get('logout','home\LoginController@logout');
@@ -107,80 +139,16 @@ Route::post('register/register','home\RegisterController@register');
 Route::get('register/sendPhone','home\RegisterController@sendPhone');
 // 邮箱验证
 Route::get('register/changeStatus/{id}/{token}','home\RegisterController@changeStatus');
-
-
-// 个人中心
-// Route::get();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // 商城主页
-
-
-
-
 Route::get('/','home\IndexController@index');
 // 列表商品
 Route::get('list/{id}','home\ListController@index');
-
-
-
-
 Route::post('list/search','home\ListController@seek');
-
 // 商品详情
 Route::get('goods/{gid}','home\GoodsController@index');
-
 // 收藏商品
 Route::get('collect/{gid}','home\GoodsController@collect');
 Route::get('collectcall/{gid}','home\GoodsController@collectcall');
-
 // 购物车页面
 Route::get('cart/show','home\CarController@index');
 // 加入购物车
@@ -191,14 +159,10 @@ Route::get('cart/del/{gid}','home\CarController@delete');
 Route::get('cart/addnum/{gid}','home\CarController@addNum');
 // 商品-
 Route::get('cart/descnum/{gid}','home\CarController@descNum');
-
 // 订单
 Route::get('order','home\OrderController@index');
-
 // 结算
 Route::get('close','home\OrderController@close');
-
-
 // 个人中心首页
 Route::get('personal','home\PersonalController@index');
 // 收藏

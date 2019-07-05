@@ -44,12 +44,7 @@
 							<div class="bundle-main">
 							@foreach($data as $v)
 								<ul class="item-content clearfix">
-									<li class="td td-chk">
-										<div class="cart-checkbox ">
-											<input class="check" id="J_CheckBox_170037950254" name="items[]" value="170037950254" type="checkbox">
-											<label for="J_CheckBox_170037950254"></label>
-										</div>
-									</li>
+									
 									<li class="td td-item">
 										<div class="item-pic">
 											<a href="#" target="_blank" data-title="美康粉黛醉美东方唇膏口红正品 持久保湿滋润防水不掉色护唇彩妆" class="J_MakePoint" data-point="tbcart.8.12">
@@ -122,11 +117,8 @@
 
 				<div class="float-bar-wrapper">
 					<div id="J_SelectAll2" class="select-all J_SelectAll">
-						<div class="cart-checkbox">
-							<input class="check-all check" id="J_SelectAllCbx2" name="select-all" value="true" type="checkbox">
-							<label for="J_SelectAllCbx2"></label>
-						</div>
-						<span>全选</span>
+						
+						
 					</div>
 					<div class="operations">
 						<!-- <a href="#" hidefocus="true" class="deleteAll">删除</a> -->
@@ -134,8 +126,7 @@
 					</div>
 					<div class="float-bar-right">
 						<div class="amount-sum">
-							<span class="txt">已选商品</span>
-							<em id="J_SelectedItemsCount">0</em><span class="txt">件</span>
+							
 							<div class="arrow-box">
 								<span class="selected-items-arrow"></span>
 								<span class="arrow"></span>

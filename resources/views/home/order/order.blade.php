@@ -26,9 +26,6 @@
 										<span class="buy-line-title buy-line-title-type">收货地址：</span>
 										<span class="buy--address-detail">
 								   <span class="province">{{ $v->site}}</span>
-										<!-- <span class="city">武汉</span>市
-										<span class="dist">洪山</span>区
-										<span class="street">雄楚大道666号(中南财经政法大学)</span> -->
 										</span>
 
 										</span>
